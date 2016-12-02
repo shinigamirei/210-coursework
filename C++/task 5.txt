@@ -1,0 +1,55 @@
+GENERATEMATRIX()
+	colN <- (how many columns)
+	rowN <- (how many rows)
+	for (x < colN)
+		for (y < rowN)
+			int z <- (give value)
+			MATRIX[x][y] <- z
+	return MATRIX
+
+ADDMATRIX(MATRIX A,MATRIX B)
+	//assuming matrices are equal size
+	colN <- (No.columns)
+	rowN <- (No.rows)
+	sum[colN][rowN]
+	for (x < colN)
+		for (y < rowN)
+			sum[x][y] <- (A[x][y] + B[x][y])
+	return sum
+			
+SUBMATRIX(MATRIX A,MATRIX B)
+	//assuming matrices are equal size
+	colN <- (No.columns)
+	rowN <- (No.rows)
+	sub[colN][RowN]
+	for (x < colN)
+		for (y < rowN)
+			sub[x][y] <- (A[x][y] - B[x][y])
+	return sub
+
+MULTIPLYMATRIX(MATRIX A, MATRIX B)
+	colN <- (No.columns)
+	rowN <- (No.rows)
+	mul[colN][rowN]
+	for (x < colN)
+		for(y < rowN)
+			for (i < colN)
+				for (j < rowN)
+					mul[x][y] <-(mul[x][y]+(A[i][j]*B[j][i]))
+	return mul
+
+NUMMULTIPLY (MATRIX A, INT N)
+	colN <- (No.columns)
+	rowN <- (No.rows)
+	product[colN][rowN]
+	for (x < colN)
+		for (y < rowN)
+			product[x][y] <- (MATRIX A[x][y]*N)
+return product
+
+B <- GENERATEMATRIX()
+C <- GENERATEMATRIX()
+BC <- MULTIPLYMATRIX(B,C)
+BADDC <- ADDMATRIX(B,C)
+2BADDC <- NUMMULTIPLY(BADDC,2)
+A <- SUBMATRIX(BC,2BADDC)

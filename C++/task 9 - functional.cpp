@@ -1,8 +1,6 @@
 #include <iostream>
 #include <math.h>
 
-
-
 int main(char* args, int argc)
 {
 	int values[6] = { 2,3,5,7,9,10 };
@@ -13,8 +11,6 @@ int main(char* args, int argc)
 	int point;
 	int prepoint;
 	bool found = false;
-
-
 	point = floor(valuesLen/2);
 	
 	while (found == false)

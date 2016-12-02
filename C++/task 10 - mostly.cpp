@@ -27,7 +27,7 @@ int main(char* args, int argc)
 		{
 			if (comparison.size() > longest.size())
 			{
-				clearVector(longest);
+				longest.clear();
 				for (int x = 0;x < comparison.size();x++)
 				{
 					longest.push_back(comparison[x]);

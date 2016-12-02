@@ -1,0 +1,2 @@
+For task 1 the Big O notation is simply O(n) as it's just a simple for loop
+The big O notation for task 2 is also O(n) as while there are two loops they anre not nestled so time will still increace linearly 
